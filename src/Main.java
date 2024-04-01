@@ -6,8 +6,8 @@ public class Main {
         //массив уже заполнен 0
         int[] massiv1 = {12, 16, 13, -8, 7, 9};
 
-        int[] massiv2 = inputArray();
-        int[] mass = sumAsrray();
+        int[] massiv2 =sumAsrray();
+
 
         // printArray("массив0 содержит ", massiv0);
         // printArray("массив1 содержит ", massiv1);
@@ -55,7 +55,7 @@ public class Main {
     //сумма всех элементов массива
     public static int[] sumAsrray() {
         int sum = 0;
-        int[] myArray = new int[0];
+        int[] myArray = inputArray();
         for (int i = 0; i < myArray.length; i++) {
             sum = sum + myArray[i];
         }
