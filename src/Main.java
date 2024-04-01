@@ -52,13 +52,21 @@ public class Main {
     }
 
     //сумма всех элементов массива
-    public static void sumAsrray() {
-
+    public static int sumAsrray() {
+        Scanner scanner = new Scanner(System.in);
         int sum = 0;
-        int myArray[] = {3, 5, 7, 12};
+        int j= scanner.nextInt();
+        int[] myArray=new int[j];
         for (int i = 0; i < myArray.length; i++) {
             sum = sum + myArray[i];
         }
-        System.out.println(sum);
+        return sum;
+    }
+
+    public void minArray() {
+        int [] myArray;
+        for (int i = 0; i < myArray.length; i++) {
+           int min =myArray[i];
+        }
     }
 }
