@@ -62,10 +62,4 @@ public class Main {
         return new int[]{sum};
     }
 
-    public void minArray() {
-        int [] myArray = new int[0];
-        for (int i = 0; i < myArray.length; i++) {
-           int min =myArray[i];
-        }
-    }
 }
