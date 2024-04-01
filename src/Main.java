@@ -8,11 +8,11 @@ public class Main {
 
         int[] massiv2 = inputArray();
 
-       // printArray("массив0 содержит ", massiv0);
-       // printArray("массив1 содержит ", massiv1);
+        // printArray("массив0 содержит ", massiv0);
+        // printArray("массив1 содержит ", massiv1);
         printArray("массив2 содержит ", massiv2);
-       // fillArray(massiv0, 193);
-       // printArray("массив0 содержит ", massiv0);
+        // fillArray(massiv0, 193);
+        // printArray("массив0 содержит ", massiv0);
 
 
 //        printArray("массив2 содержит ", massiv2);
@@ -26,30 +26,39 @@ public class Main {
         }
     }
 
-    public static void fillArray(int[] m, int filler)
-    {
+    public static void fillArray(int[] m, int filler) {
         for (int i = 0; i < m.length; i++) {
             m[i] = filler;
         }
     }
 
-    public static void readArray(int[] m)
-    {
+    public static void readArray(int[] m) {
         Scanner scanner = new Scanner(System.in);
         int value;
-        System.out.println("введите "+m.length+" элементов массива");
+        System.out.println("введите " + m.length + " элементов массива");
         for (int i = 0; i < m.length; i++) {
             value = scanner.nextInt();
             m[i] = value;
         }
     }
 
-    public static int[] inputArray(){
+    public static int[] inputArray() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введите размер массива 2");
         int size = scanner.nextInt();
         int[] m = new int[size];
         readArray(m);
         return m;
+    }
+
+    //сумма всех элементов массива
+    public static void sumAsrray() {
+
+        int sum = 0;
+        int myArray[] = {3, 5, 7, 12};
+        for (int i = 0; i < myArray.length; i++) {
+            sum = sum + myArray[i];
+        }
+        System.out.println(sum);
     }
 }
