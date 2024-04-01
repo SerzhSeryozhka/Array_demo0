@@ -6,7 +6,7 @@ public class Main {
         //массив уже заполнен 0
         int[] massiv1 = {12, 16, 13, -8, 7, 9};
 
-        int[] massiv2 =sumAsrray();
+        int[] massiv2 =minArray();
 
 
         // printArray("массив0 содержит ", massiv0);
@@ -62,4 +62,12 @@ public class Main {
         return new int[]{sum};
     }
 
+    public static int[] minArray() {
+        int min=-0;
+        int [] myArray = inputArray();
+        for (int i = 0; i < myArray.length; i++) {
+            min =myArray[i];
+        }
+        return new int[] {min};
+    }
 }
