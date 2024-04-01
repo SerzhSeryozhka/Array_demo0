@@ -7,6 +7,7 @@ public class Main {
         int[] massiv1 = {12, 16, 13, -8, 7, 9};
 
         int[] massiv2 = inputArray();
+        int[] mass = sumAsrray();
 
         // printArray("массив0 содержит ", massiv0);
         // printArray("массив1 содержит ", massiv1);
@@ -52,19 +53,17 @@ public class Main {
     }
 
     //сумма всех элементов массива
-    public static int sumAsrray() {
-        Scanner scanner = new Scanner(System.in);
+    public static int[] sumAsrray() {
         int sum = 0;
-        int j= scanner.nextInt();
-        int[] myArray=new int[j];
+        int[] myArray = new int[0];
         for (int i = 0; i < myArray.length; i++) {
             sum = sum + myArray[i];
         }
-        return sum;
+        return new int[]{sum};
     }
 
     public void minArray() {
-        int [] myArray;
+        int [] myArray = new int[0];
         for (int i = 0; i < myArray.length; i++) {
            int min =myArray[i];
         }
